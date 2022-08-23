@@ -58,7 +58,7 @@ def make_fsf_script(bids_dir, output_dir, run=False):
     filename_2nd = os.path.join(output_dir, 'fsl_second_level.fsf')
 
     # copy bet bash
-    shutil.copyfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'bet_fsl_per_dir.sh'),
+    shutil.copyfile(os.path.join(os.path.dirname(os.path.realpath(__file__)), './bash/bet_fsl_per_dir.sh'),
                     os.path.join(output_dir, 'bet_fsl_per_dir.sh'))
 
     # update fsf templates
