@@ -23,7 +23,7 @@ echo "anat path = ${anatpath}"
 
 cd ${anatpath}
 for filename in *T1w.nii.gz ; do
-  fname=`$FSL_DIR/bin/remove_ext ${filename}`
+  fname=`$FSLDIR/bin/remove_ext ${filename}`
   echo "Running bet for ${fname}"
   bet ${fname}.nii.gz ${fname}_brain.nii.gz -R -f .2 -g 0
 done
